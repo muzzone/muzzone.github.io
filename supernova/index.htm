@@ -1,0 +1,290 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<style>
+    @font-face{
+      font-family:HelveticaNeue-Bold;
+      src: url(txt/HelveticaNeue-Bold.ttf);
+    }
+    @font-face{
+      font-family:MyriadPro;
+      src: url(txt/MyriadPro-Regular.otf);
+    }
+    @font-face{
+      font-family:HelveticaNeue;
+      src: url(txt/helvetica-neue.ttf);
+    }
+
+  	</style>
+	<link href="style/flickerplate.css"  type="text/css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
+    <script src="js/flickerplate.min.js" type="text/javascript"></script>
+    <script src="js/" type="text/javascript"></script>
+    
+    <!-- КОНСТРУКТОР СЛАЙДЕРА -->
+    
+    <script>
+	$(document).ready(function(){
+		$('.slider').flicker();
+	});
+	</script>
+	
+	<!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
+	
+	<script>
+	$(document).ready(function(){
+		$('.menu-trigger').click(function(){
+			$('.menu ul').slideToggle(100);
+		});
+
+		$(window).resize(function() {		
+			if (  $(window).width() > 679 ) {			
+				$('.menu ul').removeAttr('style');
+			 }
+		});
+	});	
+	</script>
+
+</head>
+<body>
+	<header>
+		
+		<!-- СЛАЙДЕР -->
+
+		<div class="slider" data-block-text="false">
+			<ul>
+				<li data-background="img/1.png">
+					<div class="flick-title">GRAVITY</div>
+					<div class="flick-sub-text">The Gravity is a design studio in Novaland, New Gate. We care about users, with an eye to the <br> past. And of course with a vision of the future we are creating a truly best products.</div>
+				</li>
+				<li data-background="img/2.png">
+					<div class="flick-title">GRAVITY</div>
+					<div class="flick-sub-text">The Gravity is a design studio in Novaland, New Gate. We care about users, with an eye to the <br> past. And of course with a vision of the future we are creating a truly best products.</div>
+				</li>
+				<li data-background="img/3.png">
+					<div class="flick-title">GRAVITY</div>
+					<div class="flick-sub-text">The Gravity is a design studio in Novaland, New Gate. We care about users, with an eye to the  <br> past. And of course with a vision of the future we are creating a truly best products.</div>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- МЕНЮ -->
+
+		<div class="menu">
+			<div class="logo">
+				SUPERN<img style="vertical-align: -4.5px; padding-right: 2px;" src="img/logo.png">VA
+			</div>
+			<div class="menu-trigger">
+				<hr  size="5px" noshade><hr  size="5px" noshade><hr size="5px" noshade>
+			</div>
+			<ul type="none">
+    			<li>HOME</li>
+    			<li>WORK</li>
+    			<li>BLOG</li>
+    			<li>PAGES</li>
+    			<li>SHORTCODES</li>
+    			<li>CONTACT</li>
+  			</ul>
+  			
+		</div>
+	</header>
+	<div class="body">
+
+		<!-- ПРЕИМУЩЕСТВА -->
+
+		<div class="advantage">
+
+			<div><img src="img/advantage1.jpg">
+				<h3>Stunning headers</h3>
+				<p>Vestibulum tincidunt placerat ligula sed vestibulum.<br> Phasellus nec enim ac enim congue tincidunt.<br> Curabitur molestie urna justo, quis</p>
+			</div>
+
+
+			<div><img src="img/advantage2.jpg">
+				<h3 >Amazing picture boxes</h3>
+				<p>Vestibulum tincidunt placerat ligula sed vestibulum.<br> Phasellus nec enim ac enim congue tincidunt.<br> Curabitur molestie urna justo, quis</p>
+			</div>
+
+
+			<div><img src="img/advantage3.jpg">
+				<h3>Innovative services</h3>
+				<p>Vestibulum tincidunt placerat ligula sed vestibulum.<br> Phasellus nec enim ac enim congue tincidunt.<br> Curabitur molestie urna justo, quis</p>
+			</div>
+			
+		</div>
+		<hr color="#e5e5e5"; size="1px" noshade > 
+		
+		<!-- ОСНОВНЫЙЕ СЕКЦИИ -->
+
+		<div class="main">
+			<h2 class="aniview fast" data-av-animation="fadeIn">Design, code & technology</h2>
+			<p style="font-size:16px">Vestibulum tincidunt placerat ligula sed vestibulum. Phasellus nec enim ac enim congue tincidunt. Curabitur<br> molestie urna justo, quis varius urna convallis ac. Vestibulum nec dictum nulla. Aenean consectetur non nulla<br> ac tristique. Proin nibh dolor, rutrum et sollicitudin nec, semper at ipsum.</p>
+			
+			<div class="section1">
+				
+				<div><img src="img/grad1.png">
+					<div class="mask">
+						<button class="viewDetails" id="vbtn1"> View details</button>
+					</div>
+					<h4>Project with Slider</h4>
+					<button class="likebtn" id="btn1" onclick="like(this)" style="background-image: url(img/like.png)">	
+					<span>18</span></button>
+				</div>
+
+
+				<div><img src="img/grad2.png">
+					<div class="mask">
+						<button class="viewDetails" id="vbtn2"> View details</button>
+					</div>
+					<h4>Project with Single Picture</h4>
+					<button class="likebtn" id="btn2" onclick="like(this)" style="background-image: url(img/like.png)">	
+					<span>18</span></button>
+				</div>
+
+
+				<div><img src="img/grad3.png">
+					<div class="mask">
+						<button class="viewDetails" id="vbtn3"> View details</button>
+					</div>
+					<h4>Project with Video</h4>
+					<button class="likebtn" id="btn3" onclick="like(this)" style="background-image: url(img/like.png)">	
+					<span>18</span></button>
+				</div>	
+
+			</div>
+			<hr color="#e5e5e5"; size="1px" noshade >
+			<h2 style="margin-bottom:0; margin-top:90px;">Latest from the blog</h2>
+			
+			<div class="section2">
+				
+				<div><img src="img/grad4.png">
+					<div class="mask">
+						<button class="viewDetails" id="vbtn4"> View details</button>
+					</div>
+					<h4>Robotic Cygnus Spacecraft 1st<br> Space Station Test Flight</h4>
+					<p class="txt1">Development, Web Design</p>
+					<hr color="#e5e5e5"; size="1px" noshade >
+					<p class="txt2">Etiam at ligula in metus consectetur viverra.
+						<br>  Suspendisse nec turpis eget ante gravida tincidunt<br>  placerat at ligula. In feugiat</p>
+						<div>
+							<hr color="#e5e5e5"; size="1px" noshade >
+							<p style="font-size:11px;"> September 3, 2013      35 Comments </p>
+							<hr color="#e5e5e5"; size="1px" noshade >
+						</div>
+				</div>
+
+
+				<div><img src="img/grad5.png">
+					<div class="mask">
+						<button class="viewDetails" id="vbtn5"> View details</button>
+					</div>
+					<h4>New Zealand Volcano Eruption<br> Seen from Space</h4>
+					<p class="txt1">Development, Web Design</p>
+					<hr color="#e5e5e5"; size="1px" noshade >
+					<p class="txt2">Etiam at ligula in metus consectetur viverra.
+						<br> Suspendisse nec turpis eget ante gravida tincidunt<br>  placerat at ligula. In feugiat</p>
+						<div>
+							<hr color="#e5e5e5"; size="1px" noshade >
+							<p style="font-size:11px;"> September 3, 2013      35 Comments </p>
+							<hr color="#e5e5e5"; size="1px" noshade >
+						</div>
+				</div>
+				
+
+				<div><img src="img/grad6.png">
+					<div class="mask">
+						<button class="viewDetails" id="vbtn6"> View details</button>
+					</div>
+					<h4>Vote Now! Top Space Stories of the<br> Week – Sept. 2, 2012</h4>
+					<p class="txt1">Development, Web Design</p>
+					<hr color="#e5e5e5"; size="1px" noshade >
+					<p class="txt2">Etiam at ligula in metus consectetur viverra.
+						<br>  Suspendisse nec turpis eget ante gravida tincidunt<br>  placerat at ligula. In feugiat</p>
+						<div>
+							<hr color="#e5e5e5"; size="1px" noshade >
+							<p style="font-size:11px;"> September 3, 2013      35 Comments </p>
+							<hr color="#e5e5e5"; size="1px" noshade >
+						</div>
+				</div>	
+
+			</div>
+		</div>
+    </div>
+
+    <!-- фУТЕР -->
+
+	<footer>
+		<div class="logo">
+			SUPERN<img style="margin:auto; vertical-align: -4.5px; padding-right: 2px;" src="img/logo.png" >VA
+		</div>
+
+		<p>Fusce felis eros, luctus eu tempus nec, auctor at nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+			<br> turpis egestas. Vivamus blandit nisi cursus nulla dapibus ut vehicula neque interdum.</p>
+
+		<div class="social">
+			<a style="background-image: url(img/Twitter.png)" href="https://twitter.com"  
+			onmouseover="this.style.backgroundImage = 'url(img/Twitter1.png)';" onmouseout="this.style.backgroundImage = 'url(img/Twitter.png)';"></a>
+
+			<a style="background-image: url(img/Facebook.png)" href="https://Facebook.com" 
+			onmouseover="this.style.backgroundImage = 'url(img/Facebook1.png)';" onmouseout="this.style.backgroundImage = 'url(img/Facebook.png)';"></a>
+
+			<a style="background-image: url(img/Linkedin.png)" href="https://Linkedin.com" 
+			onmouseover="this.style.backgroundImage = 'url(img/Linkedin1.png)';" onmouseout="this.style.backgroundImage = 'url(img/Linkedin.png)';"></a>
+
+			<a style="background-image: url(img/Dribbble.png)" href="https://Dribbble.com" 
+			onmouseover="this.style.backgroundImage = 'url(img/Dribbble1.png)';" onmouseout="this.style.backgroundImage = 'url(img/Dribbble.png)';"></a>
+
+			<a style="background-image: url(img/Pinterest1.png)" href="https://Pinterest.com" 
+			onmouseover="this.style.backgroundImage = 'url(img/Pinterest.png)';" onmouseout="this.style.backgroundImage = 'url(img/Pinterest1.png)';"></a>
+
+			<a style="background-image: url(img/Tumblr.png)" href="https://Tumblr.com" 
+			onmouseover="this.style.backgroundImage = 'url(img/Tumblr1.png)';" onmouseout="this.style.backgroundImage = 'url(img/Tumblr.png)';"></a>
+
+			<a style="background-image: url(img/Behance.png)" href="https://Behance.com" 
+			onmouseover="this.style.backgroundImage = 'url(img/Behance1.png)';" onmouseout="this.style.backgroundImage = 'url(img/Behance.png)';"></a>
+
+			<a style="background-image: url(img/Vimeo.png)" href="https://Vimeo.com" 
+			onmouseover="this.style.backgroundImage = 'url(img/Vimeo1.png)';" onmouseout="this.style.backgroundImage = 'url(img/Vimeo.png)';"></a>
+
+		</div>
+
+		<div class="bott">
+			<p>© Created by Aleksey Miroshnychenko <span><br></span>
+				<span>Legal</span> <span>Privacy</span> <span>Contact</span> 
+			</p>
+		</div>
+	</footer>
+	
+	<!-- ВИЗУАЛЬНАЯ ОБРАБОТКА ЛАЙКОВ -->
+
+	<script>
+		
+		function like(lbtn){
+			var val = lbtn.children[0].innerHTML;
+			if (lbtn.style.backgroundImage.indexOf("img/like.png")>0) {
+				lbtn.style.backgroundImage = "url(img/like1.png)";
+				lbtn.style.color = "#dd3f19";
+				val ++;
+				lbtn.children[0].innerHTML = val;
+			}
+			else{
+				lbtn.style.backgroundImage = "url(img/like.png)";
+				lbtn.style.color = "#adadad";
+				val --;
+				lbtn.children[0].innerHTML = val;
+			};
+		
+		}
+	</script>
+</body>			
+</html>
+
+
+
+
+
+
