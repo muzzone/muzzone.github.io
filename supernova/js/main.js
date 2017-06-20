@@ -22,6 +22,7 @@ $(document).ready(function(){
 	$('.slider').flicker();
 	// ВЫПАДАЮЩЕЕ МЕНЮ
 	$('.menu-trigger').click(function(){
+		document.getElementById('#home').style.filter == 'blur(9px)' ? document.getElementById('#home').style.filter = 'blur(0px)': document.getElementById('#home').style.filter = 'blur(9px)';
 		$('.menu ul').slideToggle(100);
 	});
 
@@ -30,4 +31,13 @@ $(document).ready(function(){
 			$('.menu ul').removeAttr('style');
 		 }
 	});
+	// ПРОКРУТКА
+	$('a[href*=#]').bind("click", function(e){
+ 	var anchor = $(this);
+ 	$('html, body').stop().animate({
+ 	scrollTop: $(anchor.attr('href')).offset().top
+ 	}, 300);
+ 	e.preventDefault();
+ 	});
+ 	return false;
 });
