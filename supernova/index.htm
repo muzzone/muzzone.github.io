@@ -19,36 +19,13 @@
 
   	</style>
 	<link href="style/flickerplate.css"  type="text/css" rel="stylesheet">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
 	<script src="js/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
     <script src="js/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
     <script src="js/flickerplate.min.js" type="text/javascript"></script>
     <script src="js/" type="text/javascript"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     
-    <!-- КОНСТРУКТОР СЛАЙДЕРА -->
-    
-    <script>
-	$(document).ready(function(){
-		$('.slider').flicker();
-	});
-	</script>
-	
-	<!-- ВЫПАДАЮЩЕЕ МЕНЮ -->
-	
-	<script>
-	$(document).ready(function(){
-		$('.menu-trigger').click(function(){
-			$('.menu ul').slideToggle(100);
-		});
-
-		$(window).resize(function() {		
-			if (  $(window).width() > 679 ) {			
-				$('.menu ul').removeAttr('style');
-			 }
-		});
-	});	
-	</script>
-
 </head>
 <body>
 	<header>
@@ -258,28 +235,6 @@
 			</p>
 		</div>
 	</footer>
-	
-	<!-- ВИЗУАЛЬНАЯ ОБРАБОТКА ЛАЙКОВ -->
-
-	<script>
-		
-		function like(lbtn){
-			var val = lbtn.children[0].innerHTML;
-			if (lbtn.style.backgroundImage.indexOf("img/like.png")>0) {
-				lbtn.style.backgroundImage = "url(img/like1.png)";
-				lbtn.style.color = "#dd3f19";
-				val ++;
-				lbtn.children[0].innerHTML = val;
-			}
-			else{
-				lbtn.style.backgroundImage = "url(img/like.png)";
-				lbtn.style.color = "#adadad";
-				val --;
-				lbtn.children[0].innerHTML = val;
-			};
-		
-		}
-	</script>
 </body>			
 </html>
 
