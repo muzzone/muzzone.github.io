@@ -9,3 +9,9 @@ $(document).ready(function(){
  	return false;
  });
 
+$(document).ready(function(){
+	jQuery(function($){
+   		$("#phone").mask("(999) 99 999-99-99");
+   		$("#phone2").mask("(999) 99 999-99-99");
+	});
+});
