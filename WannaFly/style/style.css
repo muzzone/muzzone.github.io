@@ -731,6 +731,7 @@ main {
 }
 .do .go {
   display: inline-block;
+  margin-top: -2px;
   width: 300px;
   margin-left: -149px;
   background-color: white;
