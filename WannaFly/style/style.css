@@ -53,6 +53,11 @@ header {
     background-repeat: no-repeat;
   }
 }
+@media screen and (max-width: 350px){
+  header {
+    padding: 0 6px;
+  }
+}
 header .headerTop {
   max-width: 1200px;
   display: -webkit-box;
