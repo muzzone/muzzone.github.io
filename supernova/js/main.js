@@ -22,7 +22,7 @@ $(document).ready(function(){
 	$('.slider').flicker();
 	// ВЫПАДАЮЩЕЕ МЕНЮ
 	$('.menu-trigger').click(function(){
-		document.getElementById('#home').style.filter == 'blur(9px)' ? document.getElementById('#home').style.filter = 'blur(0px)': document.getElementById('#home').style.filter = 'blur(9px)';
+		
 		$('.menu ul').slideToggle(100);
 	});
 
