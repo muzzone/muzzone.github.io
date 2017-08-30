@@ -22,7 +22,7 @@ hr{
 	width: 27px;
 	height: 14px;
 	position: absolute;
-	left: 116px;
+	margin-left: -700px;
 	top: 786px;
 }
 header{
@@ -172,7 +172,9 @@ header{
 	}
 }
 ////header end////
-
+.section{
+	min-height: 580px;
+}
 
 
 

@@ -80,7 +80,7 @@
                 </li>
             </ul>
         </nav>
-
+        <!-- ////nav end//// -->
         <div id="fullpage">
         	<div class="section " id="section0">
         		<header>
@@ -138,11 +138,81 @@
             <!-- ///////////////////////////////////////// -->
 	    	<div class="section ourServices" id="section3">
 	    		
+	    		<div class="container">
+                    <div class="borderBlock">
+                    <h2>Our Services</h2>
+                    <div class="square"></div>
+                    </div>
+	    			<ul class="blocks">
+	    				<li>
+                        <dvi class="centerer">
+	    					<div>
+	    						<hr>
+	    						<img src="img/ico/TIMINGICON.png">
+	    						<hr>
+	    					</div>
+	    					<h4>TIMING</h4>
+	    					<p>Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>
+	    				</dvi></li>
+	    				<li>
+                        <dvi class="centerer">
+	    					<div>
+	    						<hr>
+	    						<img src="img/ico/PRESENTATIONICON.png">
+	    						<hr>
+	    					</div>
+	    					<h4>PRESENTATION</h4>
+	    					<p>Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>
+	    				</dvi></li>
+	    				<li>
+                        <dvi class="centerer">
+	    					<div>
+	    						<hr>
+	    						<img src="img/ico/ACCURATEICON.png">
+	    						<hr>
+	    					</div>
+	    					<h4>ACCURATE</h4>
+	    					<p>Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>
+	    				</dvi></li>
+	    				<li>
+                        <dvi class="centerer">
+	    					<div>
+	    						<hr>
+	    						<img src="img/ico/DESIGNICON.png">
+	    						<hr>
+	    					</div>
+	    					<h4>DESING</h4>
+	    					<p>Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>
+	    				</dvi></li>
+	    				<li>
+                        <dvi class="centerer">
+	    					<div>
+	    						<hr>
+	    						<img src="img/ico/PRESENTATION1ICON.png">
+	    						<hr>
+	    					</div>
+	    					<h4>DEVELOPER</h4>
+	    					<p>Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>
+	    				</dvi></li>
+	    				<li>
+                        <dvi class="centerer">
+	    					<div>
+	    						<hr>
+	    						<img src="img/ico/PRODUCTIONICON.png">
+	    						<hr>
+	    					</div>
+	    					<h4>PRODUCTION</h4>
+	    					<p>Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>
+	    				</dvi></li>
+	    			</ul>
+                    <span>03</span>
+	    		</div>
 	    	</div>
             <!-- ///////////////////////////////////////// -->
         </div> 
 
         <link href="css/jquery.fullPage.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/ajax.js"></script>
         <script src="js/jquery.fullPage.min.js"></script>
@@ -157,19 +227,22 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
         <script type="text/javascript">
 			$(document).ready(function() {
-				$('#fullpage').fullpage({
-					anchors: ['firstPage', 'secondPage', '3rdPage'],
-					verticalCentered: false,
-					navigation: true,
-					navigationPosition: 'right',
-					navigationTooltips: ['First page', 'Second page', 'Third and last page'],
-                    responsiveWidth: 740,
-                    afterResponsive: function(isResponsive){
-                        
-                    }
-				});
+				if (document.documentElement.clientWidth > 766 && document.documentElement.clientHeight > 899) {
+	                $('#fullpage').fullpage({
+						anchors: ['firstPage', 'secondPage', '3rdPage'],
+						verticalCentered: false,
+						navigation: true,
+						navigationPosition: 'right',
+						navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+	                    responsiveWidth: 740,
+	                    afterResponsive: function(isResponsive){
+	                        
+	                    }
+					});
+	            }
 			});
 		</script>
     </body>
