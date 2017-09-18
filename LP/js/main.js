@@ -16,4 +16,12 @@ $( document ).ready(function() {
     			document.querySelector('.navMob').classList.add("hidden");
 			 }
 		});
+    $('a[href*=#]').bind("click", function(e){
+    var anchor = $(this);
+    $('html, body').stop().animate({
+    scrollTop: $(anchor.attr('href')).offset().top
+    }, 300);
+    e.preventDefault();
+    });
+    return false;
 });
