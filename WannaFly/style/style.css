@@ -857,5 +857,7 @@ footer .footerbtm p {
   position: relative;
   top: 250px;
 }
-
+.map{
+	height: 720px;
+}
 /*# sourceMappingURL=style.css.map */
