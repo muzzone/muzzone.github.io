@@ -419,6 +419,247 @@ nav{
 		}
 	}
 }
+.portfolio{
+	.container{
+		max-width: 1185px;
+		margin: auto;
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		>span{
+			font-size: 24px;
+			font-family: 'OROSKO';
+			color:#fff;
+		    display: inline-block;
+		    position: relative;
+		    position:relative;
+		    left: 150px;
+		    top: 20px;
+		    background:#1b1b19;
+		    width: 70px;
+		    text-align: center;
+		}
+	}
+	.borderBlock{
+	    margin: auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		width: 400px;
+		height: 80px;
+		border: 2px solid #fff;
+		h2{
+		    margin-top: 28px;
+		    margin-left: 5px;
+		    text-align: center;
+		    text-transform: none;
+		}
+		.square{
+			position: absolute;
+			margin-top: -14px;
+			margin-left: 330px;
+		}
+	}
+	.list{
+		text-align: center;
+		li{
+			display: inline-block;
+			padding:0 12px;
+			a{
+				color: #b3b3b2;
+				font-family: Orkney;
+			}
+			a:hover{
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.images{
+		display: flex;
+		flex-wrap: wrap;
+		li{
+			width: 233px;
+			margin: 13px;
+			img{
+			}
+			>div{
+				position: absolute;
+				width: 183px;
+				padding-left:30px;
+				margin-top: -324px;
+				height: 300px;
+				background: #252525;
+				border: 10px solid #4d4d4c;
+				opacity: 0;
+				transition: all 150ms ease-in-out;
+				p{
+					font-family: Orkney;
+					font-size: 16px;
+					color: #fff;
+					margin-top: 134px;
+				}
+				span{
+					font-family: HelveticaNeue;
+					font-size: 16px;
+					color: #fff;
+				}
+				.loadMore{
+					display: flex;
+					margin-top: 60px;
+					align-items: center;
+    				justify-content: space-around;
+    				width: 140px;
+    				margin-left: 6px;
+					hr{
+						width: 15px;
+					}
+					button{
+					    background: none;
+					    color: #fff;
+					    border: 1px solid #fff;
+					    padding: 6px 8px;
+					    transition: all 150ms ease-in-out;
+					    font-family: Orkney;
+					}
+					button:hover{
+						background:#000;
+					}
+				}
+			}
+			>div:hover{
+				opacity: 1;
+			}
+		}
+	}
+}
+////portfolio end////
+
+.prices{
+	.container{
+		max-width: 1185px;
+		margin: auto;
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		padding-bottom: 50px;
+		.borderBlock{
+		    margin: auto;
+			margin-top: 100px;
+			margin-bottom: 50px;
+			width: 450px;
+			height: 80px;
+			border: 2px solid #fff;
+			h2{
+			    margin-top: 28px;
+			    margin-left: 5px;
+			    text-align: center;
+			    text-transform: none;
+			}
+			.square{
+				position: absolute;
+				margin-top: -14px;
+				margin-left: 330px;
+			}
+		}
+		////borderBlock END////
+		p{
+			color: #fff;
+			font-family: HelveticaNeue;
+			font-size: 16px;
+			margin-bottom: 100px;
+			text-align: center;
+		}
+		.pricesBlock{
+			display: flex;
+			li{
+				height: 520px;
+				width: 280px;
+				display: flex;
+			    justify-content: center;
+			    align-items: center;
+				>div{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					color: #1f1f1e;
+					background: #f6f6f6;
+					height: 468px;
+					width: 248px;
+					border: 1px solid #f6f6f6;
+					transition: all 150ms ease-in-out;
+					cursor: pointer;
+					h4{
+						font-size: 18px;
+						color: inherit;
+						font-family: Orkney;
+						text-transform: uppercase;
+						margin:0;
+						margin-bottom: 25px;
+					}
+					h3{
+						font-size: 66px;
+						color: inherit;
+						margin:0;
+					}
+					h5{
+						color: inherit;
+						font-size: 16px;
+						font-family: Orkney;
+						margin:0;
+						margin-top: 10px;
+					}
+					p{
+						color: inherit;
+						font-family: HelveticaNeue;
+						font-size: 16px;
+						margin:6px 0;	
+					}
+					hr{
+						width: 66px;
+						margin:auto;
+						margin:25px 0;
+						border-bottom: 1px solid #000;
+						transition: all 150ms ease-in-out;
+					}
+					a{
+						color: inherit;
+						font-size: 18px;
+						font-family: Orkney;
+						text-transform: uppercase;
+						text-decoration: underline;
+						margin-top: 50px;
+					}
+					a:hover{
+						text-decoration: none;
+					}
+				}
+				////div end////
+				div:hover{
+					background:#1f1f1f;
+					color:#fff;
+					height: 518px;
+					width: 278px;
+					hr{
+						border-bottom: 1px solid #fff;
+					}
+				}
+			}
+		}
+		// pricesBlock END //
+		>span{
+			font-size: 24px;
+			font-family: 'OROSKO';
+			color:#fff;
+		    display: inline-block;
+		    position: relative;
+		    left: 150px;
+		    top: 70px;
+		    background:#1b1b19;
+		    width: 70px;
+		    text-align: center;
+		}
+	}
+}
 
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span {
