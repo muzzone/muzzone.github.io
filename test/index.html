@@ -27,60 +27,6 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <nav id="menu" class="menuClose"> 
-            <a class="close menuOpenClose"><hr noshade color="#fff"><hr noshade color="#fff"></a>
-            <ul class="cd-primary-nav">
-                <li>
-                    <a href="#firstPage">
-                        <div class="square"></div> 
-                        Home 
-                        <div class="square"></div>
-                        <hr>
-                    </a>
-                </li>
-                <li>
-                    <a href="#secondPage">
-                        <div class="square"></div>
-                        About Us
-                        <div class="square"></div> 
-                        <hr>
-                    </a>
-                </li>
-                <li>
-                    <a href="#3rdPage">
-                        <div class="square"></div>
-                        Our Services
-                        <div class="square"></div> 
-                        <hr>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="square"></div>
-                        Our Clients 
-                        <div class="square"></div> 
-                        <hr>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="square"></div>
-                        And The Prices
-                        <div class="square"></div> 
-                        <hr>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="square"></div>
-                        Contact Us 
-                        <div class="square"></div> 
-                        <hr>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <!-- ////nav end//// -->
         <div id="fullpage">
         	<div class="section " id="section0">
         		<header>
@@ -136,7 +82,7 @@
 	    		</div>
 	    	</div>
             <!-- ///////////////////////////////////////// -->
-	    	<div class="section ourServices" id="section3">
+	    	<div class="section ourServices" id="section3" >
 	    		
 	    		<div class="container">
                     <div class="borderBlock">
@@ -398,7 +344,116 @@
                     <span>06</span>
                 </div>
             </div>
+            <!-- //////////prices end///////// -->
+            <div class="section contactUs">
+                <div class="container">
+                    <div class="borderBlock">
+                        <h2>Contact Us</h2>
+                        <div class="square"></div>
+                    </div>
+                    <p>If you have questions, feel free to get in touch.</p>
+                    <hr>
+
+                    <div class="cotactsContainer">
+                        <ul class="contacts">
+                            <li>
+                                <div class="text">
+                                    <p>PHONE</p>
+                                    <p>0123-456-789</p>
+                                </div>
+                                <div class="ico">
+                                    <img src="img/ico/Phones.png">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text">
+                                    <p>ADDRESS</p>
+                                    <p>6th  Street, Los Santos, CA</p>
+                                </div>
+                                <div class="ico">
+                                    <img src="img/ico/Address.png">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text">
+                                    <p>EMAIL</p>
+                                    <p>info@lifeinvader.com</p>
+                                </div>
+                                <div class="ico">
+                                    <img src="img/ico/Emails.png">
+                                </div>
+                            </li>
+                        </ul>
+                        <form action="#">
+                            <div>
+                                <input type="text" name="name" placeholder="Name">
+                                <input type="text" name="Email" placeholder="Email">
+                                <input type="text" name="Phone" placeholder="Phone">
+                            </div>
+                            <div><input type="text" name="Subject" placeholder="Subject"></div>
+                            <div><input type="text" name="Message" placeholder="Message"></div>
+                            <button>SEND</button>
+                        </form>
+                    </div>
+                    <span>07</span>
+                </div>
+            </div>
         </div> 
+
+        <nav id="menu" class="menuClose" style="display: none;"> 
+            <a class="close menuOpenClose"><hr noshade color="#fff"><hr noshade color="#fff"></a>
+            <ul class="cd-primary-nav">
+                <li>
+                    <a href="#FirstPage">
+                        <div class="square"></div> 
+                        Home 
+                        <div class="square"></div>
+                        <hr>
+                    </a>
+                </li>
+                <li>
+                    <a href="#About">
+                        <div class="square"></div>
+                        About Us
+                        <div class="square"></div> 
+                        <hr>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Services">
+                        <div class="square"></div>
+                        Our Services
+                        <div class="square"></div> 
+                        <hr>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Portfolio">
+                        <div class="square"></div>
+                        Our Clients 
+                        <div class="square"></div> 
+                        <hr>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Prices">
+                        <div class="square"></div>
+                        And The Prices
+                        <div class="square"></div> 
+                        <hr>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Contacts">
+                        <div class="square"></div>
+                        Contact Us 
+                        <div class="square"></div> 
+                        <hr>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- ////nav end//// -->
 
         <link href="css/jquery.fullPage.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -421,11 +476,12 @@
 			$(document).ready(function() {
 				if (document.documentElement.clientWidth > 766 && document.documentElement.clientHeight > 899) {
 	                $('#fullpage').fullpage({
-						anchors: ['firstPage', 'secondPage', '3rdPage'],
+						anchors: ['FirstPage', 'About', 'Services', 'Portfolio', 'Prices', 'Contacts'],
 						verticalCentered: false,
 						navigation: true,
+
 						navigationPosition: 'right',
-						navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+						navigationTooltips: ['FirstPage', 'About', 'Services', 'Portfolio', 'Prices', 'Contacts'],
 	                    responsiveWidth: 740,
 	                    afterResponsive: function(isResponsive){
 	                        

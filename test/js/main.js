@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+	$('#menu').show();
 	$('.menuOpenClose').click(function() {
 		if($("#menu").hasClass("menuClose")){
 			$("#menu").removeClass("menuClose");

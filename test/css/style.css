@@ -68,7 +68,7 @@ body {
       font-family: 'HelveticaNeue';
       max-width: 680px; }
     .aboutUs .container a {
-      transition: all 250ms ease-in-out;
+      transition: all 150ms ease-in-out;
       color: #fff;
       font-size: 24px;
       font-family: 'Orkney';
@@ -312,7 +312,6 @@ body {
           color: #fff;
           border: 1px solid #fff;
           padding: 6px 8px;
-          transition: all 150ms ease-in-out;
           font-family: Orkney; }
         .portfolio .images li > div .loadMore button:hover {
           background: #000; }
@@ -423,6 +422,111 @@ body {
     width: 70px;
     text-align: center; }
 
+.contactUs .container {
+  max-width: 1185px;
+  margin: auto;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff; }
+  .contactUs .container .borderBlock {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 450px;
+    height: 80px;
+    border: 2px solid #fff; }
+    .contactUs .container .borderBlock h2 {
+      margin-top: 28px;
+      margin-left: 5px;
+      text-align: center;
+      text-transform: none; }
+    .contactUs .container .borderBlock .square {
+      position: absolute;
+      margin-top: -14px;
+      margin-left: 330px; }
+  .contactUs .container p {
+    text-align: center;
+    color: #c4c6ca;
+    font-size: 18px;
+    font-family: HelveticaNeue; }
+  .contactUs .container hr {
+    max-width: 524px;
+    border-color: #4a4b4b;
+    margin: auto; }
+  .contactUs .container .cotactsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .contactUs .container .cotactsContainer .contacts li {
+      display: flex;
+      margin: 50px 0; }
+      .contactUs .container .cotactsContainer .contacts li .text {
+        min-width: 190px;
+        padding-right: 10px;
+        border-right: 2px solid #575757; }
+        .contactUs .container .cotactsContainer .contacts li .text p {
+          text-align: right;
+          font-size: 16px; }
+        .contactUs .container .cotactsContainer .contacts li .text p:first-child {
+          font-family: Orkney;
+          margin-top: 0; }
+        .contactUs .container .cotactsContainer .contacts li .text p:nth-child(2) {
+          margin-bottom: 0;
+          font-family: HelveticaNeue; }
+      .contactUs .container .cotactsContainer .contacts li .ico {
+        display: flex;
+        align-items: center;
+        padding-left: 15px; }
+    .contactUs .container .cotactsContainer form {
+      max-width: 560px; }
+      .contactUs .container .cotactsContainer form div {
+        width: 100%;
+        margin-top: 20px; }
+        .contactUs .container .cotactsContainer form div input {
+          width: 99%; }
+      .contactUs .container .cotactsContainer form div:first-child {
+        display: flex;
+        justify-content: space-between; }
+        .contactUs .container .cotactsContainer form div:first-child input {
+          width: 30%; }
+      .contactUs .container .cotactsContainer form input {
+        background: #1b1b19;
+        border: none;
+        border-bottom: 1px solid #585959;
+        color: #bbbcc0;
+        font-family: HelveticaNeue;
+        font-size: 16px;
+        padding-left: 5px;
+        padding-bottom: 15px;
+        outline: none; }
+      .contactUs .container .cotactsContainer form input:hover, .contactUs .container .cotactsContainer form input:focus {
+        border-bottom: 1px solid #fff; }
+      .contactUs .container .cotactsContainer form button {
+        background: none;
+        color: #585959;
+        border: 1px solid #585959;
+        padding: 6px 8px;
+        font-family: Orkney;
+        float: right;
+        margin-top: 25px;
+        font-size: 16px;
+        width: 260px;
+        padding-top: 8px; }
+      .contactUs .container .cotactsContainer form button:hover {
+        color: #fff;
+        border: 1px solid #fff; }
+  .contactUs .container > span {
+    font-size: 24px;
+    font-family: 'OROSKO';
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    position: relative;
+    left: 150px;
+    top: 20px;
+    background: #1b1b19;
+    width: 70px;
+    text-align: center; }
+
 nav {
   transition: all 250ms cubic-bezier(1, 0.12, 0, 1.29);
   font-family: 'OROSKO';
@@ -514,6 +618,9 @@ nav {
     nav .close {
       right: 25px;
       top: 55px; } }
+
+.menuClose {
+  margin-left: 100%; }
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
