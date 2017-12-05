@@ -53,6 +53,110 @@ p {
   margin: 0;
   padding: 0; }
 
+body {
+  margin: 0;
+  padding: 0; }
+
+hr {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+header {
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative; }
+  header .nav {
+    margin: auto;
+    max-width: 1800px;
+    height: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; }
+    header .nav .menuBtn {
+      width: 35px;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      header .nav .menuBtn hr {
+        width: 100%;
+        border: 3px solid #fff;
+        border-radius: 3px; }
+  header .main {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px; }
+    header .main > img {
+      position: absolute;
+      top: 300px;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      opacity: 0.2;
+      max-width: 100%; }
+    header .main .hero {
+      text-align: center; }
+      header .main .hero h3 {
+        font-family: 'Roboto-Medium';
+        font-size: 35px;
+        color: #fff;
+        margin-top: 20px; }
+      header .main .hero p {
+        font-family: 'Roboto-Regular';
+        font-size: 16px;
+        color: #fff;
+        margin-top: 10px; }
+
+.socials {
+  display: flex;
+  align-items: center; }
+  .socials li {
+    margin: 0 10px; }
+    .socials li a .svgico {
+      fill: #fff;
+      transition: 0.15s; }
+    .socials li a:hover .svgico {
+      fill: #7b9b5e; }
+
+.parallax {
+  position: absolute;
+  z-index: -999; }
+  .parallax img {
+    position: absolute;
+    width: 1920px;
+    left: -100px;
+    transition: 0.1s; }
+  .parallax #parallax_1 img {
+    top: 450px; }
+  .parallax #parallax_2 img {
+    top: 16px;
+    z-index: 50; }
+  .parallax #parallax_3 img {
+    top: -30px;
+    z-index: 48; }
+  .parallax #parallax_4 img {
+    top: -20px;
+    z-index: 47; }
+
 .content {
   display: flex; }
   .content h2 {
@@ -76,6 +180,7 @@ p {
     height: 6.875rem;
     margin-top: -110px; }
   .content .content__left {
+    z-index: 3;
     background: #eceee2;
     width: 50%; }
     .content .content__left .about__triangle {
@@ -115,6 +220,7 @@ p {
           color: #3c4044;
           text-align: start; }
   .content .content__right {
+    z-index: 3;
     padding-bottom: 50px;
     background: #f4f5f0;
     width: 50%; }
@@ -609,6 +715,12 @@ footer {
   height: 750px;
   width: 100%; }
 
+@media screen and (min-width: 1800px) {
+  .parallax img {
+    width: 2100px; } }
+@media screen and (min-width: 1925px) {
+  .parallax img {
+    width: 2800px; } }
 @media screen and (min-width: 1700px) {
   .triangle-blog {
     margin-top: -165px; }
@@ -683,6 +795,13 @@ footer {
   .nav-blog {
     display: none !important; } }
 @media screen and (max-width: 766px) {
+  header {
+    background-image: url("../img/water.jpg");
+    z-index: -1; }
+
+  .parallax {
+    display: none; }
+
   .aboutMe {
     height: 1750px; }
     .aboutMe .says {
@@ -730,7 +849,10 @@ footer {
     margin: 0 15px; } }
 @media screen and (max-width: 570px) {
   .about__triangle_mobile {
-    margin-top: -55px; } }
+    margin-top: -55px; }
+
+  .content .content__right .skills ul li {
+    margin-top: 20px; } }
 @media screen and (max-width: 426px) {
   .myWorks {
     margin-top: -20px; }

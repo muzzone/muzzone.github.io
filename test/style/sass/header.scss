@@ -2,12 +2,16 @@
 
 header{
 	height: 600px;
-	background-image: url("../img/water.jpg");
+	//background-image: url("../img/water.jpg");
 	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
 	.nav{
 		margin: auto;
 		max-width: 1800px;
-		height: 100px;
+		height: 83px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
